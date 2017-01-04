@@ -19,7 +19,6 @@ app.get('/todos', function(req, res) {
 	var queryParams = req.query;
 	var filteredTodos = todos;
 
-
 	if (queryParams.hasOwnProperty('completed') && queryParams.completed === 'true') {
 		filteredTodos = _.findWhere(filteredTodos, {completed: true});
 	} else if (queryParams.hasOwnProperty('completed') && queryParams.completed === 'false') {
