@@ -13,7 +13,7 @@ var todos = [{
 }, {
 	id: 3,
 	description: "Read paper",
-	completed: true
+	completed: false
 }];
 
 app.get('/', function (req, res) {
